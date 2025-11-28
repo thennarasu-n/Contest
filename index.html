@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceDropper – Smart Discount Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="pricelogo.jpeg" class="nav-logo">
+        <span class="nav-title">PriceDropper</span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#coupons">Coupons</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<section id="home" class="container scroll-animate">
+
+    <img src="pricelogo.jpeg" class="logo">
+
+    <h2 class="title">PriceDropper</h2>
+    <p class="subtitle">Smart Discount Calculator</p>
+
+    <div id="calculator" class="card scroll-animate">
+
+        <div class="product-box">
+            <img src="product.jpeg" class="product-img">
+        </div>
+
+        <label>Original Price ($)</label>
+        <input type="number" id="price" placeholder="Enter price">
+
+        <label>Discount (%)</label>
+        <input type="number" id="discount" placeholder="Enter discount %">
+
+        <label>Coupon Code</label>
+        <input type="text" id="coupon" placeholder="SAVE10, MEGA25, FLAT50...">
+
+        <button class="btn" onclick="applyDiscount()">Calculate</button>
+
+        <div class="result">
+            <p><strong>Discount Amount:</strong> $<span id="discountAmount">0.00</span></p>
+            <p><strong>Final Price:</strong> $<span id="finalPrice">0.00</span></p>
+            <p><strong>You Save:</strong> $<span id="savings">0.00</span></p>
+        </div>
+
+        <p id="couponMsg" class="coupon-message"></p>
+
+    </div>
+</section>
+
+<section id="coupons" class="coupon-section scroll-animate">
+    <h2>Available Coupons</h2>
+    <ul>
+        <li><strong>SAVE10</strong> → Extra 10% Off</li>
+        <li><strong>MEGA25</strong> → Extra 25% Off</li>
+        <li><strong>FLAT50</strong> → Flat $50 Off</li>
+        <li><strong>FIRSTBUY</strong> → 15% Off First Purchase</li>
+    </ul>
+</section>
+
+<section id="history" class="history-section scroll-animate">
+    <h2>Calculation History</h2>
+    <ul id="historyList"></ul>
+</section>
+
+<section id="about" class="about-section scroll-animate">
+    <h2>About PriceDropper</h2>
+    <p>A smart, animated discount calculator made with ❤</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
