@@ -20,8 +20,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#calculator">Calculator</a></li>
         <li><a href="#coupons">Coupons</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#about">About</a></li>
+        <li style="margin-right: 50px;"><a href="#about">About</a></li>
     </ul>
 
     <div class="hamburger" onclick="toggleMenu()">
@@ -35,13 +34,13 @@
 
     <img src="pricelogo.jpeg" class="logo">
 
-    <h2 class="title">PriceDropper</h2>
-    <p class="subtitle">Smart Discount Calculator</p>
+    <h2 style="color: #ffffff;font-family: cursive;" class="title" >PRICE DROPPER</h2>
+    <p style="color: #ffffff;" class="subtitle">Smart Discount Calculator</p>
 
     <div id="calculator" class="card scroll-animate">
 
         <div class="product-box">
-            <img src="product.jpeg" class="product-img">
+            <img src="product.webp" class="product-img">
         </div>
 
         <label>Original Price ($)</label>
@@ -54,11 +53,11 @@
         <input type="text" id="coupon" placeholder="SAVE10, MEGA25, FLAT50...">
 
         <button class="btn" onclick="applyDiscount()">Calculate</button>
-
         <div class="result">
             <p><strong>Discount Amount:</strong> $<span id="discountAmount">0.00</span></p>
             <p><strong>Final Price:</strong> $<span id="finalPrice">0.00</span></p>
             <p><strong>You Save:</strong> $<span id="savings">0.00</span></p>
+            <span id="error"></span>
         </div>
 
         <p id="couponMsg" class="coupon-message"></p>
@@ -67,25 +66,38 @@
 </section>
 
 <section id="coupons" class="coupon-section scroll-animate">
-    <h2>Available Coupons</h2>
-    <ul>
-        <li><strong>SAVE10</strong> → Extra 10% Off</li>
-        <li><strong>MEGA25</strong> → Extra 25% Off</li>
-        <li><strong>FLAT50</strong> → Flat $50 Off</li>
-        <li><strong>FIRSTBUY</strong> → 15% Off First Purchase</li>
-    </ul>
-</section>
-
-<section id="history" class="history-section scroll-animate">
-    <h2>Calculation History</h2>
-    <ul id="historyList"></ul>
+    <h2>AVAILABLE COUPONS</h2>
+        <hr>
+        <h2><strong>SAVE10</strong> → Extra 10% Off</h2>
+        <hr>
+        <h2><strong>MEGA25</strong> → Extra 25% Off</h2>
+        <hr>
+        <h2><strong>FLAT50</strong> → Flat 50% Off</h2>
+        <hr>
+        <h2><strong>FIRSTBUY</strong> → 15% Off First Purchase</h2>
+        <hr>
 </section>
 
 <section id="about" class="about-section scroll-animate">
-    <h2>About PriceDropper</h2>
-    <p>A smart, animated discount calculator made with ❤</p>
+    <b><h2>ABOUT PRICE DROPPER</h2>
+        <hr>
+        <p>PRICE DROPPER IS A SMART DISCOUNT CALCULATOR</p>
+        <hr>
+        <P>THE ONLY PLATFORM YOU CAN CALCULATE THE REALTIME DISCOUNT USING COUPON</P>
+        <hr>
+        <P>WE PROVIDE THE BEST AND ACCURATE DISCOUNT CALCULATION</P>
+        <hr>
+        <P>SO THAT YOU CAN GET THE BEST DEALS WHILE SHOPPING ONLINE</P>
+        <hr>
+        <P>OUR MISSION IS TO HELP CUSTOMERS SAVE MONEY AND MAKE INFORMED PURCHASE DECISIONS</P>
+        <hr>
+        <P>BY USING PRICE DROPPER, YOU CAN BE SURE THAT YOU ARE GETTING THE BEST POSSIBLE PRICE ON YOUR PURCHASES</P>
+        <hr>
+        <P>HAPPY SHOPPING!!</P>
+        <hr>
+    </b>
 </section>
 
-<script src="script.js"></script>
+<script src="file.js"></script>
 </body>
 </html>
